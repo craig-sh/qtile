@@ -987,7 +987,7 @@ class Qtile(CommandObject):
         """List of all addressible widget names"""
         return list(self.widgets_map.keys())
 
-    def cmd_to_layout_index(self, index: str, name: Optional[str] = None) -> None:
+    def cmd_to_layout_index(self, index: int, name: Optional[str] = None) -> None:
         """Switch to the layout with the given index in self.layouts.
 
         Parameters
